@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Smart Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid   d-flex justify-content-center align-items-center" style="background-color: #d2f3f0;">
+
+        <div class="container inner w-100 mt-5 mb-5 ">
+            <nav class="navbar navbar-expand-lg mt-1">
+
+                <div class=" d-flex align-items-center">
+                    <img src="logo.jpg" class="logo"></i>
+                    <h1 class="logo1">FASTRACK</h1>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=" menubar"><i class='bx bx-menu-alt-right ' style='color:#2727b1'></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" style="font-family:Chaparral Pro Light;">
+                        <li class="nav-item active ">
+                            <a class="nav-link " href="#">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactModal" data-toggle="modal">Contact Us</a>
+                        </li>
+                        <li id="bar" class="  nav-item nav-link ">
+                            <i class='bx bx-menu-alt-right  '></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 order-md-2  d-flex justify-content-center align-items-center">
+                        <img src="https://img.freepik.com/premium-vector/fitness-app-smartwatch-app-technology-tiny-girl-sport-training-woman-running-treadmill_501813-219.jpg"
+                            alt="Background Image" class="img-fluid back">
+                    </div>
+
+                    <div class="col-md-5 order-md-1 text-container mt-5">
+                        <h2 class="smart  mb-4">Smart Watch</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium eu
+                            dolor a consectetur. Nulla facilisi. Donec convallis ipsum vitae bibendum laoreet.</p>
+                        <button class="btn btn-primary rounded-pill p-2 mt-5 d-flex align-items-center"
+                            style="width: 150px;" data-toggle="modal" data-target="#signInModal">
+                            <span class="bttn align-items-center justify-content-center d-flex ">
+                                <i class='bx bx-chevron-right-circle'
+                                    style='color:#ffffff; font-size: 30px; margin-left: 10px;'></i>
+                            </span>
+                            <span class="arrow" style="font-size: 20px;">SIGN IN</span>
+                        </button>
+                        <div class="d-flex justify-content-between mt-3 cube mb-5">
+                            <div class="icon-box d-flex flex-row align-items-center ms-5"
+                                style="width: 20px; height: 20px; margin-left: 30px;">
+                                <i class='bx bxs-square' style='color:rgb(85, 134, 224); margin-right: 10px;'></i>
+                                <i class='bx bxs-square' style='color:#d2f3f0; margin-right: 10px;'></i>
+                                <i class='bx bxs-square' style='color:#d2f3f0; margin-right: 8px;'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact form popup -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-3 mt-3">
+
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Enter your message"></textarea>
+                            <label for="message">Message</label>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
